@@ -1,0 +1,136 @@
+
+header {
+    background-color: black;
+}
+
+
+.menu {
+    margin-top: -10px;
+    background-color: #23272d;
+}
+
+.menu a {
+    color: white;
+}
+
+.contenido-principal {
+    background-color: #23272d;
+}
+
+.texto { /* no funcionó con text-white :( */
+    color: white;
+}
+
+@keyframes headerr {
+    from { background-color: black; }
+    to {background-image: url(../img/rayos.gif);}   
+}
+
+.arriba {  /* tener presente que esto debe apuntar a la clase del html */
+    animation-name: headerr;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; /* para que se repita todo el rato*/
+}
+
+.titulo1 {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 150px;
+  color: yellow;
+}
+
+
+.contenido {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 50;
+    font-style: normal;
+    text-align: center;
+    color: yellow;
+    font-size: 50px;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+}
+
+.footer img {
+    border-radius: 30%;
+}
+
+.fa-brands {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.recomendaciones {
+    background-color:#6c757d;
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
+
+@media screen and (max-width: 776px) {
+
+    .titulo1 {
+        font-size: 120px;
+      }
+}
+
+@media screen and (max-width: 600px) {
+
+    .titulo1 {
+        font-size: 110px;
+      }
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .titulo1 {
+        font-size: 100px;
+      }
+}
+
+@media screen and (max-width: 500px) {
+
+    .titulo1 {
+        font-size: 90px;
+      }
+}
+
+@media screen and (max-width: 450px) {
+
+    .titulo1 {
+        font-size: 80px;
+      }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .titulo1 {
+        font-size: 70px;
+      }
+}
+
+@media screen and (max-width: 350px) {
+
+    .titulo1 {
+        font-size: 60px;
+      }
+}
+
+@media screen and (max-width: 300px) {
+
+    .titulo1 {
+        font-size: 50px;
+      }
+
+}

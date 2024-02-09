@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lita Torres">
+    <meta name="description" content="Javascript, lenguaje de programación">
+    <meta name="keywords" content="Javascript, códigos, programar, programación, lenguaje, aplicaciones, backend">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Raleway:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="assets/img/Javascriptlogo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Javascript</title>
+</head>
+
+<body>
+
+    <header class="arriba">
+        <div class="row">
+            <h1 class="titulo1">Javascript</h1>
+        </div>
+    </header>
+
+    <nav class="navbar menu navbar-expand-lg sticky-top"> <!--antes le tenia bg-dark-->
+        <div class="container">
+            <a class="navbar-brand" href="#">Javascript</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#parte1"> Definición</a>
+                    <a class="nav-link" href="#parte2"> Como funciona</a>
+                    <a class="nav-link" href="#parte3"> Tipos de datos</a>
+                    <a class="nav-link" href="#parte4"> Recomendaciones</a>
+                    <a class="nav-link" href="#parte5"> Sigue aprendiendo</a>
+                    <div class="gap-5">
+                        <button type="button" class="btn btn-sm btn-secondary boton1"><i class="fa-solid fa-moon"></i></button>
+                        <button type="button" class="btn btn-sm btn-light boton2"><i class="fa-regular fa-sun"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenido-principal"> <!-- antes le tenia bg-dark-->
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-lg-6">
+                    <section class="text-white">
+                        <h2 id="parte1" class="contenido"> ¿Qué es Javascript? </h2>
+                        <p class="texto"> Javascript es un lenguaje de programación, o lo que es lo mismo, un mecanismo con el que
+                            podemos decirle a nuestro navegador que tareas debe realizar, en que orden y cuantas veces (por ejemplo). </p>
+                        <p class="texto"> Muchas de las tareas que realizamos con HTML y CSS se podrían realizar con Javascript. De
+                            hecho, es muy probable que al principio nos parezca que es mucho más complicado hacerlo con Javascript, y
+                            que por lo tanto no merece la pena. Sin embargo, con el tiempo veremos que Javascript nos ofrece una mayor
+                            flexibilidad y un abanico de posibilidades más grande, y que bien usadas, pueden ahorrarnos bastante tiempo.
+                        </p>
+                    </section>
+                </div>
+                <div class="col-lg-6">
+                    <section class="text-white">
+                        <h2 id="parte2" class="contenido"> ¿Cómo funciona javascript?</h2>
+                        <p class="texto">El esquema general de una página web es un documento HTML donde están todas las etiquetas
+                            HTML de la página. A lo largo de ese documento, pueden existir referencias o relaciones a otros documentos,
+                            como archivos CSS o archivos Javascript.</p>
+                        <p class="texto">Por ejemplo, si dentro del documento HTML se encuentra una referencia a un archivo CSS, el
+                            navegador lo descarga y lo aplica al documento HTML, cambiando su apariencia visual. De la misma forma,
+                            si encuentra una referencia a un archivo Javascript, el navegador lo descarga y ejecuta las órdenes o
+                            acciones que allí se indican.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+            <h3 id="parte3" class="text-center contenido py-3"> Tipos de datos </h3>
+            <p class="texto"> En Javascript disponemos de los siguientes tipos de datos principales:
+            </p>
+            <table class="table table-light table-striped text-center container">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Tipo de Datos</th>
+                        <th scope="col">Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Number</td>
+                        <td>Valor numérico (enteros, decimales, etc...)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>BigInt</td>
+                        <td>Valor numérico grande</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>String</td>
+                        <td>Valor de texto (cadenas de texto, carácteres, etc...)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Boolean</td>
+                        <td>Valor booleano (valores verdadero o falso)</td>
+                    </tr>
+                    <th scope="row">5</th>
+                    <td>Undefined</td>
+                    <td>Valor sin definir (variable sin inicializar)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Function</td>
+                        <td>Función (función guardada en una variable)</td>
+                    </tr>
+                    <th scope="row">7</th>
+                    <td>Symbol</td>
+                    <td>Símbolo (valor único)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Object</td>
+                        <td>Objeto (estructura más compleja)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
+
+        <section>
+            <h2 id="parte4" class="text-center contenido py-3"> Recomendaciones </h2>
+            <div class="row d-flex justify-content-center gap-5">
+                <div class="card recomendaciones mb-3" style="max-width: 18rem;"> <!--antes le tenia text-bg-secondary -->
+                    <div class="card-header text-center"><i class="fa-brands fa-js fa-2x"></i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Conoce el Lenguaje</h5>
+                        <p class="card-text">Para aprender Javascript debemos conocer el lenguaje Javascript,  pero no podremos hacerlo si no sabemos
+                            programar. Se puede aprender a programar con Javascript, pero es recomendable tener
+                            una serie de fundamentos básicos de programación antes para que no nos resulte muy duro.</p>
+                    </div>
+                </div>
+                <div class="card recomendaciones mb-3" style="max-width: 18rem;">
+                    <div class="card-header text-center"><i class="fa-solid fa-laptop fa-2x"></i></i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Conoce la máquina </h5>
+                        <p class="card-text">Para aprender a programar antes debemos saber como «trabaja una
+                            máquina». Programar no es más que decirle a una máquina que cosas debe hacer y como debe hacerlas. Eso significa que
+                            no podemos pasar por alto nada, o la máquina lo hará mal.</p>
+                    </div>
+                </div>
+                <div class="card recomendaciones mb-3" style="max-width: 18rem;">
+                    <div class="card-header text-center"><i class="fa-solid fa-code fa-2x"></i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cuidado con lo que ordenas</h5>
+                        <p class="card-text"> Para darle órdenes a una máquina debemos tener claro que esas órdenes son correctas y harán lo que se supone que deben hacer. Si le indicamos a una máquina los pasos para resolver un
+                            problema, pero dichos pasos son erróneos, la máquina también hará mal el trabajo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="parte5" class="text-center contenido pt-3 pb-1"> Sigue aprendiendo </h2>
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner pb-5">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3 pb-3">
+                                    <a href="https://www.youtube.com/watch?v=z95mZVUcJ-E&ab_channel=SoyDalto" target="_blank"><img src="assets/img/youtube.png" class="d-block col-11" alt="..."></a> <!-- antes decia class="d-block w-100" -->
+                                </div>
+                                <div class="col-sm-6 col-md-3 pb-3">
+                                   <a href="https://www.youtube.com/watch?v=56iB4qJwoRg&ab_channel=UskoKruM2010" target="_blank"><img src="assets/img/console.jpg" class="d-block col-11" alt="..."></a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 pb-3">
+                                    <a href="https://www.youtube.com/watch?v=56iB4qJwoRg&ab_channel=UskoKruM2010" target="_blank"><img src="assets/img/funcion.png" class="d-block col-11" alt="..."> </a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 pb-3">
+                                 <a href="https://www.youtube.com/watch?v=MJkdaVFHrto&ab_channel=HolaMundo" target="_blank">  <img src="assets/img/html.jpg" class="d-block col-12" alt="..."> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3 pb-3">
+                                    <a href="https://www.youtube.com/watch?v=wZniZEbPAzk&t=2883s&ab_channel=HolaMundo" target="_blank"> <img src="assets/img/css.jpg" class="d-block col-12" alt="..."> </a> <!-- ¿solo usar media screen? o hay forma más easy? -->
+                                </div>
+                                <div class="col-sm-6 col-md-3 pb-3">
+                                   <a href="https://www.youtube.com/watch?v=Ea2ZhkC9KU0&ab_channel=TelC%C3%B3digos" target="_blank"> <img src="assets/img/alerta.jpg" class="d-block col-11" alt="..."> </a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 pb-3">
+                                    <a href="https://www.youtube.com/watch?v=56iB4qJwoRg&ab_channel=UskoKruM2010" target="_blank"><img src="assets/img/funcion.png" class="d-block col-11" alt="..."> </a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 pb-3">
+                                    <a href="https://www.youtube.com/watch?v=MJkdaVFHrto&ab_channel=HolaMundo" target="_blank">  <img src="assets/img/html.jpg" class="d-block col-12" alt="..."> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <a href="https://lenguajejs.com/javascript/introduccion/tipos-de-datos/" target="_blank"> <img
+                src="assets/img/Javascriptlogo.png" alt="logo js footer" width="70px"> </a>
+        <div class="container-fluid text-center p-3">
+            <a class="  m-2" href="#!"><i class="fab fa-twitter fa-2x"></i></a>
+            <a class=" m-2" href="#!" ><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a class="  m-2" href="#!"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a class=" m-2" href="https://github.com/LitaTorres" target="_blank"><i class="fa-brands fa-github fa-2x"></i> </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/c194e7b6b0.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>
